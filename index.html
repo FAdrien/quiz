@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<!-- La tête de la page -->
+	<head>
+		<script type="text/javascript" src="quiz01.js"></script>
+
+		<!--Les tags <meta-->
+		<meta charset="UTF-8">
+
+		<meta name="owner" content=""/>
+		<meta name="author" content=""/>
+		<meta name="copyright" content=""/>
+		<meta name="abstract" content="Ce site est dédié aux quiz."/>
+		<meta name="revised" content="Dimanche 23 août 2020, 10:35"/>
+		<meta name="keywords" content="Quiz"/>
+		<meta name="language" content="FR_fr"/>
+
+		<!--Le titre de la page-->
+		<title>Exemple de quiz</title>
+
+		<!--Les scripts JavaScript-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+		<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+
+		<!-- Les feuilles de style CSS et l'îcone -->
+		<link rel="stylesheet" type="text/css" href="quiz.css">
+		<link rel="icon" type="image/ico" href="/favicon.ico"/>
+	</head>
+
+	<!--Corps de la page-->
+	<body>
+		<!-- Le contenu du quiz -->
+		<div class="quiz-container">
+			<!-- Titre du quiz -->
+			<div class="texte">
+				<b>Choisissez un thème :</b>
+				<select id="select" onchange="getQuiz()">
+					<option value="quiz-denombrement.js" selected>Dénombrement</option>
+					<option value="quiz-proba.js">Probabilités</option>
+					<option value="quiz-VA.js">Variables aléatoires</option>
+					<option value="quiz01.js">Test</option>
+				</select>
+			</div>
+
+			<h1 id='titre'></h1>
+
+			<!-- Affichage du nombre de validation effectuées -->
+			<p id="results" class="score"></p>
+			<div id="quiz" class="active-slide"></div>
+		</div>
+
+		<!-- Les boutons -->
+		<div>
+			<button class='button' id="recommencer">Recommencer</button>
+			<button class='button' id="corriger">Modifier réponses</button>
+			<button class='button' id="solution">Voir solutions</button>
+			<button class='button' id="submit">Valider</button>
+		</div>
+
+		<!-- Le script du quiz -->
+		<script type="text/javascript" src="quiz.js"></script>
+	</body>
+</html>

@@ -1,0 +1,100 @@
+body {
+	font: Verdana, Arial, Helvetica, sans-serif ;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	background: lightgray url(imageFond.jpg) fixed;
+	background-size: cover;
+	color: black;
+	text-align: center;
+	padding: 0;
+	margin: 5px;
+	height: 100%;
+	font-size : 12px;
+}
+
+h1 {
+	margin: 0px;
+	padding: 20px;
+	font-size: 200%;
+	background-color: #279;
+	color: #fff;
+}
+
+.texte {
+	position: absolute;
+}
+
+.comment{
+	text-align : left;
+}
+
+.score{
+	border: #000 1px solid;
+	margin: 10px;
+	text-align: left;
+	display: inline-block;
+	padding : 5px;
+	background-color: #444;
+	color: #fff;
+}
+
+.titre_question{
+	text-align: center;
+	font-size: 150%;
+}
+
+.question {
+	margin-bottom: 10px;
+	background-color: lightgray;
+	padding : 5px;
+	border: gray 1px solid;
+}
+
+.answers {
+	margin-bottom: 10px;
+	text-align: left;
+	display: inline-block;
+	background-color: #E6E6E6;
+	width:  100%;
+	border: darkgray 1px solid;
+}
+
+.answers label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+button {
+	position: relative;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	background-color: #279;
+	color: #fff;
+	border: 0px;
+	border-radius: 5px;
+	padding: 20px;
+	cursor: pointer;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+button:hover {
+	background-color: #38a;
+}
+
+.active-slide {
+	position: relative;
+	text-align: left;
+	margin: 40px;
+}
+
+.quiz-container {
+	position: relative;
+	margin-top: 0px;
+	width: 80%;
+	display: inline-block;
+	background: #f5f5f5 url(motif.svg) repeat;
+	border: black 1px solid;
+	font-size : 120%;
+}
